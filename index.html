@@ -404,7 +404,7 @@
         const url='https://wa.me/'+waNumber+'?text='+encodeURIComponent(message);
 
         trackCustom('WA_CTA_Click',{cta_name:ctaName,channel:'whatsapp',destination:'+'+waNumber});
-        if(safeFbq()) window.fbq('track','Lead',{content_name:'Akhtara Residence',content_category:'Property',contact_method:'WhatsApp',cta_name:ctaName},{eventID:eventId});
+        if(safeFbq()) window.fbq('track','Purchase',{content_name:'Akhtara Residence',content_category:'Property',contact_method:'WhatsApp',cta_name:ctaName},{eventID:eventId});
 
         sendLeadToSheet({
           event_id:eventId,
